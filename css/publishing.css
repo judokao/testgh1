@@ -1,0 +1,211 @@
+/*出版區*/
+
+.card-hover {
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    color: white;
+    background-color: rgb(241 241 241);
+    overflow: hidden;
+}
+
+
+.hover1{
+    background-color: rgb(147 165 196);
+}
+
+
+
+.card-hover.fade-in {
+    -webkit-transition: opacity 150ms;
+    transition: opacity 500ms;
+}
+
+.has-card-hover:hover .card-hover.fade-in {
+    opacity: 1;
+}
+
+/*展覽區*/
+
+.card-hover2 {
+    opacity: 0;
+    position: absolute;
+    top: 280px;
+    bottom: 41px;
+    right: 7px;
+    left: 0px;
+    color: white;
+    background-color: rgb(137, 165, 196);
+    overflow: hidden;
+}
+
+
+.card-hover2.fade-in {
+    -webkit-transition: opacity 150ms;
+    transition: opacity 500ms;
+}
+
+
+.has-card-hover:hover .card-hover2.fade-in {
+    opacity: 0.9;
+}
+
+.c {
+    text-align: center;
+
+}
+
+.c a {
+    color: white;
+}
+
+
+
+/*over*/
+
+.card-hover.zoom-in {
+    -webkit-transform: scale(0);
+    transform: scale(0);
+    -webkit-transition: opacity 300ms, -webkit-transform 0s 300ms;
+    transition: opacity 300ms, -webkit-transform 0s 300ms;
+    transition: opacity 300ms, transform 0s 300ms;
+    transition: opacity 300ms, transform 0s 300ms, -webkit-transform 0s 300ms;
+}
+
+.has-card-hover:hover .card-hover.zoom-in {
+    opacity: 1;
+    -webkit-transition: -webkit-transform 500ms;
+    transition: -webkit-transform 500ms;
+    transition: transform 500ms;
+    transition: transform 500ms, -webkit-transform 500ms;
+    -webkit-transform: scale(1);
+    transform: scale(1);
+}
+
+.card-hover.slide-down {
+    height: 0;
+    -webkit-transition: opacity 300ms, height 0s 300ms;
+    transition: opacity 300ms, height 0s 300ms;
+}
+
+.has-card-hover:hover .card-hover.slide-down {
+    opacity: 1;
+    height: 100%;
+    -webkit-transition: height 300ms;
+    transition: height 300ms;
+}
+
+.card-hover-content {
+    padding: 1.5rem;
+}
+
+.has-card-hover {
+    position: relative;
+    cursor: pointer;
+}
+
+.card-img-with-frame {
+    padding: 1rem;
+    background: white;
+}
+
+.card-img-with-frame.card-img-top {
+    padding-bottom: 0;
+}
+
+.card-img-with-frame.card-img-bottom {
+    padding-top: 0;
+}
+
+.card-with-transparent-card-block {
+    background: transparent;
+    border-color: transparent;
+}
+
+.card-with-transparent-card-block .card-img-top,
+.card-with-transparent-card-block .card-img-bottom {
+    border: 1px solid rgba(0, 0, 0, 0.125);
+}
+
+.card-with-transparent-card-block .card-img-with-frame.card-img-top {
+    padding-bottom: 1rem;
+}
+
+.card-with-transparent-card-block .card-img-with-frame.card-img-bottom {
+    padding-top: 1rem;
+}
+
+
+.col-sm-4.offset-sm-2 p {
+    font-size: 1.4rem;
+    line-height: 2.5rem;
+    text-align: justify;
+
+}
+
+
+.card-hover-content p {
+    font-size: 1.4rem;
+    line-height: 2.5rem;
+    font-weight: 100;
+    text-align: justify;
+}
+
+.after::after {
+    content: '';
+    display: block;
+    margin-top: -0.15rem;
+}
+
+
+@media only screen and (max-width:1024px) {
+
+    .col-sm-4.offset-sm-2 p {
+        line-height: 2.2;
+    }
+
+}
+
+
+
+
+
+@media only screen and (max-width:414px) {
+
+
+    .col-sm-4.offset-sm-2 p {
+        line-height: 1.8;
+        font-size: 1.5rem;
+    }
+
+    .card-hover2 {
+        top: 112px;
+        bottom: 35px;
+        right: 4px;
+        left: 0px;
+    }
+
+
+
+
+}
+
+
+@media only screen and (max-width:375px) {
+
+    .card-hover2 {
+        top: 95px;
+
+    }
+
+
+
+    @media only screen and (max-width:320px) {
+
+        .card-hover2 {
+            top: 95px;
+
+        }

@@ -1,0 +1,881 @@
+<!doctype html>
+<html class="no-js">
+
+<head>
+    <meta charset="utf-8" />
+    <title>特藏圖書</title>
+
+    <!--[if lt IE 9]>
+			<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+		<![endif]-->
+    <link rel="stylesheet" media="all" href="css/style.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- Adding "maximum-scale=1" fixes the Mobile Safari auto-zoom bug: http://filamentgroup.com/examples/iosScaleBug/ -->
+
+
+    <!--RWDMEUN-->
+    <link rel="stylesheet" href="css/rwdnav.css">
+
+
+    <!-- JS -->
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/jquery-migrate-1.2.1.js"></script>
+    <script src="js/css3-mediaqueries.js"></script>
+    <script src="js/custom.js"></script>
+    <script src="js/tabs.js"></script>
+
+    <!-- Tweet -->
+
+    <link rel="stylesheet" href="css/jquery.tweet.css" media="all" />
+    <script src="js/tweet/jquery.tweet.js"></script>
+
+    <!-- ENDS Tweet -->
+
+    <!-- superfish -->
+    <link rel="stylesheet" media="screen" href="css/superfish.css" />
+    <script src="js/superfish-1.4.8/js/hoverIntent.js"></script>
+    <script src="js/superfish-1.4.8/js/superfish.js"></script>
+    <script src="js/superfish-1.4.8/js/supersubs.js"></script>
+    <!-- ENDS superfish -->
+
+    <!-- prettyPhoto幻燈片放大不換頁 -->
+
+    <script src="js/prettyPhoto/js/jquery.prettyPhoto.js"></script>
+    <link rel="stylesheet" href="js/prettyPhoto/css/prettyPhoto.css" media="screen" />
+
+    <!-- ENDS prettyPhoto -->
+
+    <!-- poshytip -->
+    <link rel="stylesheet" href="js/poshytip-1.1/src/tip-twitter/tip-twitter.css" />
+    <link rel="stylesheet" href="js/poshytip-1.1/src/tip-yellowsimple/tip-yellowsimple.css" />
+    <script src="js/poshytip-1.1/src/jquery.poshytip.min.js"></script>
+    <!-- ENDS poshytip -->
+
+    <!-- GOOGLE FONTS -->
+    <link href='http://fonts.googleapis.com/css?family=Arvo:400,700' rel='stylesheet' type='text/css'>
+    <link href="https://fonts.googleapis.com/css?family=Noto+Sans+TC:300,400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Noto+Serif+TC:400,500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Noto+Sans+TC|Noto+Serif+TC:400,500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Noto+Sans+TC|Noto+Serif+TC:400,500|Playfair+Display&display=swap" rel="stylesheet">
+
+    <!-- Flex Slider -->
+    <link rel="stylesheet" href="css/flexslider.css">
+    <script src="js/jquery.flexslider-min.js"></script>
+    <!-- ENDS Flex Slider -->
+
+    <!-- Masonry -->
+    <script src="js/masonry.min.js"></script>
+    <script src="js/imagesloaded.js"></script>
+    <!-- ENDS Masonry -->
+
+    <!-- Less framework -->
+    <link rel="stylesheet" media="all" href="css/lessframework.css" />
+
+    <!-- modernizr -->
+    <script src="js/modernizr.js"></script>
+
+    <!-- SKIN -->
+    <link rel="stylesheet" media="all" href="css/skin.css" />
+
+    <!-- search	js-->
+    <script type="text/javascript" src="js/sudoh-d.js"></script>
+
+    <!-- wow.css -->
+    <link rel="stylesheet" href="css/animate.css">
+
+    <!--政大Primo VE快速查詢框   -->
+
+    <script type="text/javascript">
+        function searchPrimo() {
+
+            document.getElementById("primoQuery").value = "any,contains," + document.getElementById("primoQueryTemp").value.replace(/[,]/g, " ");
+
+            document.forms["searchForm"].submit();
+
+        }
+
+    </script>
+
+
+
+
+</head>
+
+<body lang="en" class="inside">
+
+
+
+    <!-- comboNav -->
+
+    <input type="checkbox" id="main-nav-check" />
+    <div id="menu">
+
+ 
+        <div class="rwdmenu">
+            <label for="main-nav-check" class="toggle" onclick="" title="Close">&times;</label>
+            <ul>
+
+
+                <li><a href="aboutus.html">特藏中心</a> <label for="fof" class="toggle-sub" onclick="">&#9658;</label>
+                    <input type="checkbox" id="fof" class="sub-nav-check" />
+                    <ul id="fof-sub" class="sub-nav">
+                        <li class="sub-heading">特藏中心<label for="fof" class="toggle" onclick=""
+                                title="Back">&#9658;</label></li>
+                        <li><a href="aboutus.html">關於我們</a></li>
+                        <li><a href="service.html">開放時間</a></li>
+                        <li><a href="introspace.html">空間介紹</a></li>
+                        <li><a href="rule.html">規章要點</a></li>
+                        <li><a href="qa.html">常見問題</a></li>
+                    </ul>
+                </li>
+
+
+
+                <li><a href="specialresource_1.html">特色館藏</a> <label for="fast-apps" class="toggle-sub"
+                        onclick="">&#9658;</label>
+                    <input type="checkbox" id="fast-apps" class="sub-nav-check" />
+                    <ul id="fast-apps-sub" class="sub-nav">
+                        <li class="sub-heading">特色館藏<label for="fast-apps" class="toggle" onclick=""
+                                title="Back">&#9658;</label></li>
+                        <li><a href="specialresource_1.html">文庫典藏</a></li>
+                        <li><a href="digresource1.html">專案史料</a></li>
+                        <li><a href="bookcollection.html">特藏圖書</a></li>
+                        <li><a href="search.html">資源查詢</a></li>
+                    </ul>
+                </li>
+
+
+                <li><a href="exhibition.html">學術推廣</a> <label for="fast-apps2" class="toggle-sub"
+                        onclick="">&#9658;</label>
+                    <input type="checkbox" id="fast-apps2" class="sub-nav-check" />
+                    <ul id="fast-apps2-sub" class="sub-nav">
+                        <li class="sub-heading">特藏中心<label for="fof" class="toggle" onclick=""
+                                title="Back">&#9658;</label></li>
+                        <li><a href="exhibition.html">活動展覽</a></li>
+                        <li><a href="lecture.html">講座論壇</a></li>
+                        <li><a href="publishing.html">學術出版</a></li>
+                        <li><a href="product.html">文創商品</a></li>
+                    </ul>
+                </li>
+
+
+
+
+                <li><a href="https://www.lib.nccu.edu.tw/" target="_blank">本館首頁</a></li>
+
+
+
+
+            </ul>
+        </div>
+
+
+    </div>
+
+    <!-- closing "#menu" -->
+
+    <div class="container">
+
+
+     
+
+        <div class="wow fadeInDown" data-wow-duration="1s">
+            <div id="header">
+
+
+                <label for="main-nav-check" class="toggle wt" onclick="" title="Menu">&#x2261;</label>
+            </div>
+
+            <header>
+                <div class="wrapper clearfix">
+
+                    <div id="logo" class="logo">
+                        <a href="index.html">政大<span class="w">/</span><a href="index.html" class="dig">特藏中心</a>&emsp;<span class="y">Special Collection Center</span></a>
+                    </div>
+
+             
+           <!-- nav-2 -->
+
+
+           <ul id="nav" class="sf-menu" style="position:relative;z-index:99;">
+
+            <li class="current-menu-item"><a href="aboutus.html">特藏中心</a>
+                <ul>
+                    <li><a href="aboutus.html">關於我們</a></li>
+                    <li><a href="service.html">開放時間</a></li>
+                    <li><a href="introspace.html">空間介紹</a></li>
+                    <li><a href="rule.html">規章要點</a></li>
+                    <li><a href="qa.html">常見問題</a></li>
+                </ul>
+            </li>
+
+            <li class="current-menu-item"><a href="specialresource_1.html">特色館藏</a>
+                <ul>
+                    <li><a href="specialresource_1.html">文庫典藏</a></li>
+                    <li><a href="digresource1.html">專案史料</a></li>
+                    <li><a href="bookcollection.html">特藏圖書</a></li>
+                    <li><a href="search.html">資源查詢</a></li>
+                </ul>
+            </li>
+
+
+            <li class="current-menu-item"><a href="exhibition.html">學術推廣</a>
+                <ul>
+                    <li><a href="exhibition.html">活動展覽</a></li>
+                    <li><a href="lecture.html">講座論壇</a></li>
+                    <li><a href="publishing.html">學術出版</a></li>
+                    <li><a href="product.html">文創商品</a></li>
+                </ul>
+            </li>
+
+
+            <li class="current-menu-item"><a href="https://www.lib.nccu.edu.tw/" target="_blank">本館首頁</a></li>
+
+        </ul>
+
+
+                </div>
+            </header>
+
+        </div>
+
+
+        <!-- MAIN -->
+        <div id="main">
+            <div class="wrapper clearfix">
+
+                <!-- masthead -->
+
+                <div class="masthead clearfix new1">
+                    <h1 class="tittle"><img alt="" width="210" src="img/digitallist_05.png"></h1>
+
+                    <p class="subheading"><span class="tittle2">CATALOG OF BOOKS</span>
+                        <br>
+                        特藏資料除文庫、專案收錄之名家文獻、手稿、史料外，尚包含善本古籍、普通本線裝書、珍稀本圖書，民眾團體資料、民國38年前重要剪報、教師著作及程天放部長藏書在內各類圖書。
+                    </p>
+
+
+                </div>
+
+
+
+
+
+                <div class='mh-div'></div>
+
+
+                <!-- ENDS masthead -->
+
+
+
+                <!-- posts list -->
+                <div id="posts-list" class="clearfix">
+
+                    <article class="format-standard">
+
+
+                        <!--list標題-->
+                        <div class="post-heading">
+                            <div id="dot22"></div>
+                            <a href="https://nccu.primo.exlibrisgroup.com/discovery/collectionDiscovery?vid=886NCCU_INST:886NCCU_INST&collectionId=81219518560005721
+                            " class="con_tittle">
+                                <div class="topline">
+                                    <img alt="善本" src="img/bullhorn.png">
+                                    <h4>善本</h4>
+                                </div>
+                                <p><span>∕</span>
+                                    <!-- &ensp;Lo Chia-Luen Collection-->
+                                </p>
+                            </a>
+                        </div>
+
+                        
+                        <!--list標題-->
+                        <div class="excerpt width black">
+                            政大自1954年在台復校以來，積極徵集圖書以充實館藏，並陸續典藏來自陸軍財經學校、行政司法部、教育部圖書室及名人捐贈之明清古籍。
+                            依據「國立政治大學圖書館特藏資料收錄作業原則」定義，清乾隆60年(1795年)以前之版刻列為善、清嘉慶至宣統年間(1796-1911年)列為古籍。                            
+                            <a href="https://nccu.primo.exlibrisgroup.com/discovery/collectionDiscovery?vid=886NCCU_INST:886NCCU_INST&collectionId=81219518560005721
+                            "></a>
+                        </div>
+
+
+                        <div class="feature-image">
+                            <a href="https://nccu.primo.exlibrisgroup.com/discovery/collectionDiscovery?vid=886NCCU_INST:886NCCU_INST&collectionId=81219518560005721
+                            " class="thumb">
+                                <img src="img/pic_32.jpg" alt="Alt text" />
+                            </a>
+                        </div>
+
+                    </article>
+
+
+
+                    <article class="format-standard w1">
+
+
+                        <!--list標題-->
+                        <div class="post-heading">
+                            <div id="dot23"></div>
+                            <a href="https://nccu.primo.exlibrisgroup.com/discovery/collectionDiscovery?vid=886NCCU_INST:886NCCU_INST&collectionId=81219518550005721
+                            " class="con_tittle">
+                                <div class="topline">
+                                    <img alt="" src="img/bullhorn.png">
+                                    <h4>古籍</h4>
+                                </div>
+                                <p>
+                                    <span>∕</span>
+                                    <!--&ensp;Fang Hao Collection-->
+                                </p>
+                            </a>
+
+                        </div>
+
+                        <!--list標題-->
+                        <div class="excerpt width black">
+                            依據「國立政治大學圖書館特藏資料收錄作業原則」定義，清乾隆60年(1795年)以前之版刻列為善、清嘉慶至宣統年間(1796-1911年)列為古籍。
+
+                            <a href="https://nccu.primo.exlibrisgroup.com/discovery/collectionDiscovery?vid=886NCCU_INST:886NCCU_INST&collectionId=81219518550005721
+                            "></a>
+
+                        </div>
+
+
+                        <div class="feature-image">
+                            <a href="https://nccu.primo.exlibrisgroup.com/discovery/collectionDiscovery?vid=886NCCU_INST:886NCCU_INST&collectionId=81219518550005721
+                            " class="thumb">
+                                <img src="img/pic_40.jpg" alt="Alt text" />
+                            </a>
+                        </div>
+
+                    </article>
+
+                    <article class="format-standard">
+
+
+                        <!--list標題-->
+                        <div class="post-heading">
+                            <div id="dot24"></div>
+                            <a href="https://nccu.primo.exlibrisgroup.com/discovery/collectionDiscovery?vid=886NCCU_INST%3A886NCCU_INST&collectionId=81219518520005721
+                            " class="con_tittle">
+                                <div class="topline">
+                                    <img alt="" src="img/bullhorn.png">
+                                    <h4>普通本線裝書
+                                    </h4>
+                                </div>
+<!-- 
+                                <div class="topline rwd414">
+                                    <img alt="" src="img/bullhorn.png">
+                                    <h4>兩大機關報下的蘇聯：《消息報》與《真理報》</h4>
+                                </div> -->
+                                <p><span>∕</span>
+                                    <!--                                                        &ensp;Cheng Shin-fan Collection-->
+                                </p>
+                            </a>
+
+                        </div>
+
+                        <!--list標題-->
+                        <div class="excerpt width black">
+                            依據「國立政治大學圖書館特藏資料收錄作業原則」定義，本館典藏之1911年至1945年間出版之線裝書，列為普通本線裝書。
+                            <a href="https://nccu.primo.exlibrisgroup.com/discovery/collectionDiscovery?vid=886NCCU_INST%3A886NCCU_INST&collectionId=81219518520005721
+                            "></a>
+
+                        </div>
+
+
+                        <div class="feature-image">
+                            <a href="https://nccu.primo.exlibrisgroup.com/discovery/collectionDiscovery?vid=886NCCU_INST%3A886NCCU_INST&collectionId=81219518520005721
+                            " class="thumb">
+                                <img src="img/pic_44.jpg" alt="Alt text" />
+                            </a>
+                        </div>
+
+                    </article>
+
+                    <article class="format-standard w1">
+
+
+                        <!--list標題-->
+                        <div class="post-heading">
+                            <div id="dot25"></div>
+                            <a href="https://nccu.primo.exlibrisgroup.com/discovery/collectionDiscovery?vid=886NCCU_INST%3A886NCCU_INST&collectionId=81219518510005721
+                            " class="con_tittle">
+                                <div class="topline">
+                                    <img alt="" src="img/bullhorn.png">
+                                    <h4>珍稀本圖書：中文</h4>
+                                </div>
+                                <p><span>∕</span>
+                              
+                                </p>
+                            </a>
+
+                        </div>
+
+                        <!--list標題-->
+                        <div class="excerpt width black">
+                            依據「國立政治大學圖書館特藏資料收錄作業原則」定義，本館典藏之1949年前出版之中文書刊，除去善本、古籍、普通本線裝書外者，列為珍稀本圖書-中文。
+                            <a href="https://nccu.primo.exlibrisgroup.com/discovery/collectionDiscovery?vid=886NCCU_INST%3A886NCCU_INST&collectionId=81219518510005721
+                            "></a>
+
+                        </div>
+
+
+                        <div class="feature-image">
+                            <a href="https://nccu.primo.exlibrisgroup.com/discovery/collectionDiscovery?vid=886NCCU_INST%3A886NCCU_INST&collectionId=81219518510005721
+                            " class="thumb">
+                                <img src="img/pic_33.jpg" alt="Alt text" />
+                            </a>
+                        </div>
+
+                    </article>
+
+
+
+
+
+                    <article class="format-standard">
+
+
+                        <!--list標題-->
+                        <div class="post-heading">
+                            <div id="dot26"></div>
+                            <a href="https://nccu.primo.exlibrisgroup.com/discovery/collectionDiscovery?vid=886NCCU_INST%3A886NCCU_INST&collectionId=81219518410005721
+                            " class="con_tittle">
+                                <div class="topline">
+                                    <img alt="" src="img/bullhorn.png">
+                                    <h4>珍稀本圖書：日文</h4>
+                                </div>
+                                <p><span>∕</span>
+                                    <!--                                                        &ensp;Lo Chia-Luen Collection-->
+
+                                </p>
+                            </a>
+
+                        </div>
+
+                        <!--list標題-->
+                        <div class="excerpt width black">
+                            依據「國立政治大學圖書館特藏資料收錄作業原則」定義，本館典藏之昭和20年(1945年)前出版之日文書刊，列為珍稀本圖書-日文。
+
+                            <a href="https://nccu.primo.exlibrisgroup.com/discovery/collectionDiscovery?vid=886NCCU_INST%3A886NCCU_INST&collectionId=81219518410005721
+                            "></a>
+
+                        </div>
+
+
+                        <div class="feature-image">
+                            <a href="https://nccu.primo.exlibrisgroup.com/discovery/collectionDiscovery?vid=886NCCU_INST%3A886NCCU_INST&collectionId=81219518410005721
+                            " class="thumb">
+                                <img src="img/pic_34.jpg" alt="Alt text" />
+                            </a>
+                        </div>
+
+                    </article>
+
+                    <article class="format-standard w1">
+
+
+                        <!--list標題-->
+                        <div class="post-heading">
+                            <div id="dot27"></div>
+                            <a href="https://nccu.primo.exlibrisgroup.com/discovery/collectionDiscovery?vid=886NCCU_INST%3A886NCCU_INST&collectionId=81219518400005721
+                            " class="con_tittle">
+                                <div class="topline">
+                                    <img alt="" src="img/bullhorn.png">
+                                    <h4>珍稀本圖書：西文</h4>
+                                </div>
+                                <p><span>∕</span>
+
+                                    <!--                                                        &ensp;Fang Hao Collection-->
+
+                                </p>
+                            </a>
+
+                        </div>
+
+                        <!--list標題-->
+                        <div class="excerpt width black">
+                            依據「國立政治大學圖書館特藏資料收錄作業原則」定義，本館典藏之1911年前出版之西文書刊，列為珍稀本圖書-西文。
+
+                            <a href="https://nccu.primo.exlibrisgroup.com/discovery/collectionDiscovery?vid=886NCCU_INST%3A886NCCU_INST&collectionId=81219518400005721
+                            "></a>
+
+                        </div>
+
+
+                        <div class="feature-image">
+                            <a href="https://nccu.primo.exlibrisgroup.com/discovery/collectionDiscovery?vid=886NCCU_INST%3A886NCCU_INST&collectionId=81219518400005721
+                            " class="thumb">
+                                <img src="img/pic_35.jpg" alt="Alt text" />
+                            </a>
+                        </div>
+
+                    </article>
+
+                    <article class="format-standard">
+
+
+                        <!--list標題-->
+                        <div class="post-heading">
+                            <div id="dot28"></div>
+                            <a href="https://nccu.primo.exlibrisgroup.com/discovery/collectionDiscovery?vid=886NCCU_INST%3A886NCCU_INST&collectionId=81219528820005721
+                            " class="con_tittle">
+                                <div class="topline">
+                                    <img alt="" src="img/bullhorn.png">
+                                    <h4>珍稀本圖書：期刊</h4>
+                                </div>
+                                <p><span>∕</span>
+
+                                    <!--                                                        &ensp;Cheng Shin-fan Collection-->
+
+                                </p>
+                            </a>
+
+                        </div>
+
+                        <!--list標題-->
+                        <div class="excerpt width black">
+                            因期刊資料性質與圖書有別，為使讀者查找利用，符合珍稀本圖書原則之期刊類圖書，單獨列為一類。
+
+
+                            <a href="https://nccu.primo.exlibrisgroup.com/discovery/collectionDiscovery?vid=886NCCU_INST%3A886NCCU_INST&collectionId=81219528820005721
+                            "></a>
+
+                        </div>
+
+
+                        <div class=" feature-image">
+                            <a href="https://nccu.primo.exlibrisgroup.com/discovery/collectionDiscovery?vid=886NCCU_INST%3A886NCCU_INST&collectionId=81219528820005721
+                            " class="thumb">
+                                <img src="img/pic_36.jpg" alt="Alt text" />
+                            </a>
+                        </div>
+
+                    </article>
+
+                    <article class="format-standard w1">
+
+
+                        <!--list標題-->
+                        <div class="post-heading">
+                            <div id="dot29"></div>
+                            <a href="https://nccu.primo.exlibrisgroup.com/discovery/collectionDiscovery?vid=886NCCU_INST%3A886NCCU_INST&collectionId=81219518470005721
+                            " class="con_tittle">
+                                <div class="topline">
+                                    <img alt="" src="img/bullhorn.png">
+                                    <h4>珍稀本圖書：論文</h4>
+                                </div>
+
+                                <p><span>∕</span>
+                                    <!--                                                        &ensp;Yu Tien-chong Collection-->
+                                </p>
+                            </a>
+
+                        </div>
+
+                        <!--list標題-->
+                        <div class="excerpt width black">
+                            因論文資料性質與圖書有別，為使讀者查找利用，符合珍稀本圖書原則之期刊類圖書，單獨列為一類。
+
+                            <a href="https://nccu.primo.exlibrisgroup.com/discovery/collectionDiscovery?vid=886NCCU_INST%3A886NCCU_INST&collectionId=81219518470005721
+                            "></a>
+
+                        </div>
+
+
+                        <div class="feature-image">
+                            <a href="https://nccu.primo.exlibrisgroup.com/discovery/collectionDiscovery?vid=886NCCU_INST%3A886NCCU_INST&collectionId=81219518470005721
+                            " class="thumb">
+                                <img src="img/pic_37.jpg" alt="Alt text" />
+                            </a>
+                        </div>
+
+                    </article>
+
+
+
+                    
+
+
+                    <article class="format-standard w1">
+
+
+                        <!--list標題-->
+                        <div class="post-heading">
+                            <div id="dot33"></div>
+                            <a href="https://nccu.primo.exlibrisgroup.com/discovery/collectionDiscovery?vid=886NCCU_INST%3A886NCCU_INST&collectionId=81219518330005721
+                            " class="con_tittle">
+                                <div class="topline">
+                                    <img alt="" src="img/bullhorn.png">
+                                    <h4>特色資料：本校教師著作</h4>
+                                </div>
+                                <p><span>∕</span>
+
+                                    <!--                                                        &ensp;Fang Hao Collection-->
+
+                                </p>
+                            </a>
+
+                        </div>
+
+                        <!--list標題-->
+                        <div class="excerpt width black">
+                            本校教師著作由本館入藏後，統由特藏中心典藏，以集中聚焦研究成果。
+                            <a href="https://nccu.primo.exlibrisgroup.com/discovery/collectionDiscovery?vid=886NCCU_INST%3A886NCCU_INST&collectionId=81219518330005721
+                            "></a>
+                        </div>
+
+
+                        <div class="feature-image">
+                            <a href="https://nccu.primo.exlibrisgroup.com/discovery/collectionDiscovery?vid=886NCCU_INST%3A886NCCU_INST&collectionId=81219518330005721
+                            " class="thumb">
+                                <img src="img/pic_43.jpg" alt="Alt text" />
+                            </a>
+                        </div>
+                    </article>
+
+
+
+
+                    <article class="format-standard">
+
+
+                        <!--list標題-->
+                        <div class="post-heading">
+                            <div id="dot30"></div>
+                            <a href="https://nccu.primo.exlibrisgroup.com/discovery/collectionDiscovery?vid=886NCCU_INST%3A886NCCU_INST&collectionId=81219518460005721
+                            " class="con_tittle">
+                                <div class="topline">
+                                    <img alt="" src="img/bullhorn.png">
+                                    <h4>特色資料：國關中心解密圖書</h4>
+                                </div>
+                                <p><span>∕</span>
+
+                                    <!--  &ensp;Lo Chia-Luen Collection-->
+
+                                </p>
+                            </a>
+
+                        </div>
+
+                        <!--list標題-->
+                        <div class="excerpt width black">
+                            本校國際關係研究中心早年設有圖書資料組，配合研究方向所需，主題偏重中國大陸、共產黨等研究議題，各類禁書或機密圖書文件由軍方管道進入台灣後，部分提供國關中心所典藏，成為一大特色，隨著時空背景轉換，該批資料陸續解密後，交由特藏中心典藏。
+                            <a href="https://nccu.primo.exlibrisgroup.com/discovery/collectionDiscovery?vid=886NCCU_INST%3A886NCCU_INST&collectionId=81219518460005721
+                            "></a>
+                        </div>
+
+
+                        <div class="feature-image">
+                            <a href="https://nccu.primo.exlibrisgroup.com/discovery/collectionDiscovery?vid=886NCCU_INST%3A886NCCU_INST&collectionId=81219518460005721
+                            " class="thumb">
+                                <img src="img/pic_42.jpg" alt="Alt text" />
+                            </a>
+                        </div>
+                    </article>
+
+                    <article class="format-standard w1">
+
+
+                        <!--list標題-->
+                        <div class="post-heading">
+                            <div id="dot31"></div>
+                            <a href="https://nccu.primo.exlibrisgroup.com/discovery/collectionDiscovery?vid=886NCCU_INST%3A886NCCU_INST&collectionId=81219518450005721
+                            " class="con_tittle">
+                                <div class="topline">
+                                    <img alt="" src="img/bullhorn.png">
+                                    <h4>特色資料：民眾團體資料</h4>
+                                </div>
+                                <p><span>∕</span>
+
+                                    <!--&ensp;Fang Hao Collection-->
+
+                                </p>
+                            </a>
+
+                        </div>
+
+                        <!--list標題-->
+                        <div class="excerpt width black">
+                            本館民眾團體資料所藏多為紙本檔案，多數為臺灣現存孤本，集中於1950年代，包含曬圖、手稿與照片等文件於其中。
+                            <a href="https://nccu.primo.exlibrisgroup.com/discovery/collectionDiscovery?vid=886NCCU_INST%3A886NCCU_INST&collectionId=81219518450005721
+                            "></a>
+
+                        </div>
+
+
+                        <div class="feature-image">
+                            <a href="https://nccu.primo.exlibrisgroup.com/discovery/collectionDiscovery?vid=886NCCU_INST%3A886NCCU_INST&collectionId=81219518450005721
+                            " class="thumb">
+                                <img src="img/pic_39.jpg" alt="Alt text" />
+                            </a>
+                        </div>
+                    </article>                    
+                    
+                    
+                    
+
+                    <!-- 民國38年 -->
+
+                    <!-- <article class="format-standard w1">
+
+
+                    
+                        <div class="post-heading">
+                            <div id="dot32"></div>
+                            <a href="#" class="con_tittle">
+                                <div class="topline">
+                                    <img alt="" src="img/bullhorn.png">
+                                    <h4>特色資料：民國38年前重要剪報</h4>
+                                </div>
+                                <p><span>∕</span>
+
+
+                                </p>
+                            </a>
+
+                        </div>
+
+                      
+                        <div class="excerpt width black">
+                            民國38年以前重要剪報資料以新聞資料、史料為主，收錄年代約為1930-1949年間，其剪報內容悉數已完成數位化，建置為本中心「民國38年前重要剪報資料庫」供讀者檢索使用。
+                            <a href="#"></a>
+                        </div>
+
+
+                        <div class="feature-image">
+                            <a href="#" class="thumb">
+                                <img src="img/pic_38.jpg" alt="Alt text" />
+                            </a>
+                        </div>
+
+                    </article> -->
+
+
+
+
+                    <article class="format-standard w1">
+
+
+                        <!--list標題-->
+                        <div class="post-heading">
+                            <div id="dot34"></div>
+                            <a href="https://nccu.primo.exlibrisgroup.com/discovery/collectionDiscovery?vid=886NCCU_INST%3A886NCCU_INST&collectionId=81219518430005721                            " class="con_tittle">
+                                <div class="topline">
+                                    <img alt="" src="img/bullhorn.png">
+                                    <h4>程天放部長藏書</h4>
+                                </div>
+                                <p><span>∕</span>
+
+                                    <!--                                                        &ensp;Fang Hao Collection-->
+
+                                </p>
+                            </a>
+
+                        </div>
+
+                        <!--list標題-->
+                        <div class="excerpt width black">
+                            程天放先生研究專長為遠東問題研究、國父思想、中蘇關係史、美國史與國際形勢。政大在台復校後曾任外交研究所所長，於身後藏書悉數捐贈政大圖書館。
+                            <a href="https://nccu.primo.exlibrisgroup.com/discovery/collectionDiscovery?vid=886NCCU_INST%3A886NCCU_INST&collectionId=81219518430005721                            "></a>
+                        </div>
+
+
+                        <div class="feature-image">
+                            <a href="https://nccu.primo.exlibrisgroup.com/discovery/collectionDiscovery?vid=886NCCU_INST%3A886NCCU_INST&collectionId=81219518430005721                            " class="thumb">
+                                <img src="img/pic_41.jpg" alt="Alt text" />
+                            </a>
+                        </div>
+                    </article>
+
+                    
+                    <!--一頁10個,多要自己補頁數-->
+
+
+                    <ul class="pager" id="pager">
+                        <li class="active"><a href="bookcollection.html">1</a></li>
+                    </ul>
+                    <div class="clearfix"></div>
+
+                    <!--ENDS page-navigation -->
+
+                </div>
+
+                <!-- ENDS sidebar -->
+
+                <!-- Fold image -->
+                <div id="fold"></div>
+            </div>
+
+        </div>
+        <!-- ENDS MAIN -->
+
+
+        <footer>
+            <div class="wrapper clearfix">
+
+                <div class="footer-bottom">
+
+                    <div class="info">
+                        <div class="fl">
+                            <span>國立政治大學圖書館版權所有</span>&emsp;<span>© 2021 NCCU All Rights Reserved</span>
+                            <br>
+                            <span>特藏管理組</span>&emsp;<span>TEL:(02) 8237-7020</span>&emsp;<span><a href="mailto:ccldp@nccu.edu.tw">Mail:ccldp@nccu.edu.tw</a></span>
+                        </div>
+                    </div>
+                </div>
+                <!-- ENDS bottom -->
+            </div>
+        </footer>
+
+
+    </div>
+
+
+
+    <!-- wow.js   -->
+    <script src="js/wow.min.js"></script>
+    <script>
+        wow = new WOW({
+            animateClass: 'animated',
+            offset: 100,
+            mobile: true, // default
+            live: true, // default
+
+        });
+        wow.init();
+
+    </script>
+
+
+    <button type="button" id="BackTop" class="toTop-arrow"></button>
+    <!-- js照片效果  -->
+    <script src="js/article.js"></script>
+
+    <!--   top  -->
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+    <script>
+        $(function() {
+            $('#BackTop').click(function() {
+                $('html,body').animate({
+                    scrollTop: 0
+                }, 333);
+            });
+            $(window).scroll(function() {
+                if ($(this).scrollTop() > 414) {
+                    $('#BackTop').fadeIn(222);
+                } else {
+                    $('#BackTop').stop().fadeOut(222);
+                }
+            }).scroll();
+        });
+
+    </script>
+    <!--   top over -->
+
+</body>
+
+</html>

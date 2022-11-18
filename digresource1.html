@@ -1,0 +1,983 @@
+<!doctype html>
+<html class="no-js">
+
+<head>
+    <meta charset="utf-8" />
+    <title>數位典藏</title>
+
+    <!--[if lt IE 9]>
+			<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+		<![endif]-->
+    <link rel="stylesheet" media="all" href="css/style.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- Adding "maximum-scale=1" fixes the Mobile Safari auto-zoom bug: http://filamentgroup.com/examples/iosScaleBug/ -->
+
+
+    <!--RWDMEUN-->
+    <link rel="stylesheet" href="css/rwdnav.css">
+
+
+    <!-- JS -->
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/jquery-migrate-1.2.1.js"></script>
+    <script src="js/css3-mediaqueries.js"></script>
+    <script src="js/custom.js"></script>
+    <script src="js/tabs.js"></script>
+
+    <!-- Tweet -->
+
+    <link rel="stylesheet" href="css/jquery.tweet.css" media="all" />
+    <script src="js/tweet/jquery.tweet.js"></script>
+
+    <!-- ENDS Tweet -->
+
+    <!-- superfish -->
+    <link rel="stylesheet" media="screen" href="css/superfish.css" />
+    <script src="js/superfish-1.4.8/js/hoverIntent.js"></script>
+    <script src="js/superfish-1.4.8/js/superfish.js"></script>
+    <script src="js/superfish-1.4.8/js/supersubs.js"></script>
+    <!-- ENDS superfish -->
+
+    <!-- prettyPhoto幻燈片放大不換頁 -->
+
+    <script src="js/prettyPhoto/js/jquery.prettyPhoto.js"></script>
+    <link rel="stylesheet" href="js/prettyPhoto/css/prettyPhoto.css" media="screen" />
+
+    <!-- ENDS prettyPhoto -->
+
+    <!-- poshytip -->
+    <link rel="stylesheet" href="js/poshytip-1.1/src/tip-twitter/tip-twitter.css" />
+    <link rel="stylesheet" href="js/poshytip-1.1/src/tip-yellowsimple/tip-yellowsimple.css" />
+    <script src="js/poshytip-1.1/src/jquery.poshytip.min.js"></script>
+    <!-- ENDS poshytip -->
+
+    <!-- GOOGLE FONTS -->
+    <link href='http://fonts.googleapis.com/css?family=Arvo:400,700' rel='stylesheet' type='text/css'>
+    <link href="https://fonts.googleapis.com/css?family=Noto+Sans+TC:300,400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Noto+Serif+TC:400,500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Noto+Sans+TC|Noto+Serif+TC:400,500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Noto+Sans+TC|Noto+Serif+TC:400,500|Playfair+Display&display=swap" rel="stylesheet">
+
+    <!-- Flex Slider -->
+    <link rel="stylesheet" href="css/flexslider.css">
+    <script src="js/jquery.flexslider-min.js"></script>
+    <!-- ENDS Flex Slider -->
+
+    <!-- Masonry -->
+    <script src="js/masonry.min.js"></script>
+    <script src="js/imagesloaded.js"></script>
+    <!-- ENDS Masonry -->
+
+    <!-- Less framework -->
+    <link rel="stylesheet" media="all" href="css/lessframework.css" />
+
+    <!-- modernizr -->
+    <script src="js/modernizr.js"></script>
+
+    <!-- SKIN -->
+    <link rel="stylesheet" media="all" href="css/skin.css" />
+
+    <!-- search	js-->
+    <script type="text/javascript" src="js/sudoh-d.js"></script>
+
+    <!-- wow.css -->
+    <link rel="stylesheet" href="css/animate.css">
+
+    <!--政大Primo VE快速查詢框   -->
+
+    <script type="text/javascript">
+        function searchPrimo() {
+
+            document.getElementById("primoQuery").value = "any,contains," + document.getElementById("primoQueryTemp").value.replace(/[,]/g, " ");
+
+            document.forms["searchForm"].submit();
+
+        }
+
+    </script>
+
+
+
+
+</head>
+
+<body lang="en" class="inside">
+
+
+
+    <!-- comboNav -->
+
+    <input type="checkbox" id="main-nav-check" />
+    <div id="menu">
+
+
+        <div class="rwdmenu">
+            <label for="main-nav-check" class="toggle" onclick="" title="Close">&times;</label>
+            <ul>
+
+
+                <li><a href="aboutus.html">特藏中心</a> <label for="fof" class="toggle-sub" onclick="">&#9658;</label>
+                    <input type="checkbox" id="fof" class="sub-nav-check" />
+                    <ul id="fof-sub" class="sub-nav">
+                        <li class="sub-heading">特藏中心<label for="fof" class="toggle" onclick=""
+                                title="Back">&#9658;</label></li>
+                        <li><a href="aboutus.html">關於我們</a></li>
+                        <li><a href="service.html">開放時間</a></li>
+                        <li><a href="introspace.html">空間介紹</a></li>
+                        <li><a href="rule.html">規章要點</a></li>
+                        <li><a href="qa.html">常見問題</a></li>
+                    </ul>
+                </li>
+
+
+
+                <li><a href="specialresource_1.html">特色館藏</a> <label for="fast-apps" class="toggle-sub"
+                        onclick="">&#9658;</label>
+                    <input type="checkbox" id="fast-apps" class="sub-nav-check" />
+                    <ul id="fast-apps-sub" class="sub-nav">
+                        <li class="sub-heading">特色館藏<label for="fast-apps" class="toggle" onclick=""
+                                title="Back">&#9658;</label></li>
+                        <li><a href="specialresource_1.html">文庫典藏</a></li>
+                        <li><a href="digresource1.html">專案史料</a></li>
+                        <li><a href="bookcollection.html">特藏圖書</a></li>
+                        <li><a href="search.html">資源查詢</a></li>
+                    </ul>
+                </li>
+
+
+                <li><a href="exhibition.html">學術推廣</a> <label for="fast-apps2" class="toggle-sub"
+                        onclick="">&#9658;</label>
+                    <input type="checkbox" id="fast-apps2" class="sub-nav-check" />
+                    <ul id="fast-apps2-sub" class="sub-nav">
+                        <li class="sub-heading">特藏中心<label for="fof" class="toggle" onclick=""
+                                title="Back">&#9658;</label></li>
+                        <li><a href="exhibition.html">活動展覽</a></li>
+                        <li><a href="lecture.html">講座論壇</a></li>
+                        <li><a href="publishing.html">學術出版</a></li>
+                        <li><a href="product.html">文創商品</a></li>
+                    </ul>
+                </li>
+
+
+
+
+                <li><a href="https://www.lib.nccu.edu.tw/" target="_blank">本館首頁</a></li>
+
+
+
+
+            </ul>
+        </div>
+
+    </div>
+
+    <!-- closing "#menu" -->
+
+    <div class="container">
+
+
+
+        <div class="wow fadeInDown" data-wow-duration="1s">
+            <div id="header">
+
+
+                <label for="main-nav-check" class="toggle wt" onclick="" title="Menu">&#x2261;</label>
+            </div>
+
+            <header>
+                <div class="wrapper clearfix">
+
+                    <div id="logo" class="logo">
+                        <a href="index.html">政大<span class="w">/</span><a href="index.html" class="dig">特藏中心</a>&emsp;<span class="y">Special Collection Center</span></a>
+                    </div>
+
+            
+        <div class="nav">
+
+
+       
+            <ul id="nav" class="sf-menu" style="position:relative;z-index:99;">
+
+                <li class="current-menu-item"><a href="aboutus.html">特藏中心</a>
+                    <ul>
+                        <li><a href="aboutus.html">關於我們</a></li>
+                        <li><a href="service.html">開放時間</a></li>
+                        <li><a href="introspace.html">空間介紹</a></li>
+                        <li><a href="rule.html">規章要點</a></li>
+                        <li><a href="qa.html">常見問題</a></li>
+                    </ul>
+                </li>
+
+                <li class="current-menu-item"><a href="specialresource_1.html">特色館藏</a>
+                    <ul>
+                        <li><a href="specialresource_1.html">文庫典藏</a></li>
+                        <li><a href="digresource1.html">專案史料</a></li>
+                        <li><a href="bookcollection.html">特藏圖書</a></li>
+                        <li><a href="search.html">資源查詢</a></li>
+                    </ul>
+                </li>
+
+
+                <li class="current-menu-item"><a href="exhibition.html">學術推廣</a>
+                    <ul>
+                        <li><a href="exhibition.html">活動展覽</a></li>
+                        <li><a href="lecture.html">講座論壇</a></li>
+                        <li><a href="publishing.html">學術出版</a></li>
+                        <li><a href="product.html">文創商品</a></li>
+                    </ul>
+                </li>
+
+
+                <li class="current-menu-item"><a href="https://www.lib.nccu.edu.tw/" target="_blank">本館首頁</a></li>
+
+            </ul>
+
+
+
+    </div>
+
+
+                </div>
+            </header>
+
+        </div>
+
+
+        <!-- MAIN -->
+        <div id="main">
+            <div class="wrapper clearfix">
+
+                <!-- masthead -->
+
+                <div class="masthead clearfix new1">
+                    <h1 class="tittle"><img alt="" width="210" src="img/digitallist_04.png"></h1>
+
+                    <p class="subheading"><span class="tittle2">DIGITAL ARCHIVES</span>
+                        <br>
+
+                        史料典藏的價值，旨在提供不同時代的研究者對於歷史事件的詮釋依據，是建構研究的基石；由於實體史料的保存與使用有其限制性，數位化史料能夠方便使用者近用，資訊技術與數位內容的加值應用因而成為新的研究趨勢。
+                    </p>
+
+
+
+                    <!--   搜尋區塊*2   -->
+                    <div class="out1">
+                        <ul class="tabs">
+                            <li><a href="#"><span>數位典藏查詢</span></a></li>
+
+                        </ul>
+
+                        <div class="panes">
+
+
+
+                            <!--    search 特藏中心     -->
+                            <div>
+                                <div id="1_summit" class="search">
+
+                                    <div class="1_summit_right relative">
+                                        <input class="content_text" type="text" style="user-select: auto;" placeholder="請輸入">
+                                        <input class="submit_button zoom" type="submit" name="submit" onclick="submitSearchContentdm()">
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- search over -->
+
+
+
+
+
+                        </div>
+
+
+
+
+
+
+                    </div>
+
+                    <!--   搜尋區塊*2   -->
+
+                </div>
+
+
+
+
+
+                <div class='mh-div'></div>
+
+
+                <!-- ENDS masthead -->
+
+
+
+                <!-- posts list -->
+                <div id="posts-list" class="clearfix">
+
+
+
+                    
+                    <!--    羅家倫文稿        <article class="format-standard">
+
+                        <div class="post-heading">
+                            <div id="dot6"></div>
+                            <a href="dp-1.html" class="con_tittle">
+                                <div class="topline">
+                                    <img alt="羅家倫文稿" src="img/bullhorn.png">
+                                    <h4>羅家倫文稿</h4>
+                                </div>
+                                <p><span>∕</span>
+                                    
+                                </p>
+                            </a>
+
+                        </div>
+
+                      
+                        <div class="excerpt width black">
+                            羅家倫（1897-1969）字志希，為「五四運動」之學生領袖，曾任本校前身之中央政治學校代教育長，在教育、外交、文化、近代史研究方面貢獻卓著。其收藏之史料除展現個人學養，也揭開民國初年的中國政治思想、政黨政治與政治現實的發展軌跡。
+
+
+                            <a href="dp-1.html"></a>
+
+                        </div>
+
+
+                        <div class="feature-image">
+                            <a href="dp-1.html" class="thumb">
+                                <img src="img/pic_113_03.jpg" alt="Alt text" />
+                            </a>
+                        </div>
+
+                    </article> -->
+
+                    <article class="format-standard">
+
+
+                        <!--list標題-->
+                        <div class="post-heading">
+                            <div id="dot13"></div>
+                            <a href=" dp-8.html" class="con_tittle">
+                                <div class="topline">
+                                    <img alt="" src="img/bullhorn.png">
+                                    <h4>知識分子與臺灣民主化:《大學雜誌》</h4>
+                                </div>
+
+                                <p><span>∕</span>
+                                    <!--                                                        &ensp;Yu Tien-chong Collection-->
+                                </p>
+                            </a>
+
+                        </div>
+
+                        <!--list標題-->
+                        <div class="excerpt width black">
+                            收錄《大學雜誌》第37-60期未經審查之原始版本，共951篇。1971至1973年期間，其言論表現出對現實政治的關切，主張自由民主與政治改革，是《大學雜誌》最具有影響力的時期，成為臺灣民主運動的代表刊物。
+
+
+
+                            <a href="dp-8.html"></a>
+
+                        </div>
+
+
+                        <div class="feature-image">
+                            <a href="dp-8.html" class="thumb">
+                                <img src="img/pic_20.jpg" alt="Alt text" />
+                            </a>
+                        </div>
+
+                    </article>
+
+
+                    <article class="format-standard w1">
+
+
+                        <!--list標題-->
+                        <div class="post-heading">
+                            <div id="dot7"></div>
+                            <a href="dp-2.html" class="con_tittle">
+                                <div class="topline">
+                                    <img alt="" src="img/bullhorn.png">
+                                    <h4>二二八事件臺灣本地新聞史料</h4>
+                                </div>
+                                <p>
+                                    <span>∕</span>
+                                    <!--                                                        &ensp;Fang Hao Collection-->
+                                </p>
+                            </a>
+
+                        </div>
+
+                        <!--list標題-->
+                        <div class="excerpt width black">
+                            收錄1947年2月28日至5月15日之間，臺灣本地報刊攸關二二八事件之報導。蒐集以新聞文本為主，兼及報上言論、官方公告及民間啟事；提供影像全文及關鍵詞情境探索功能。
+
+
+                            <a href="dp-2.html"></a>
+
+                        </div>
+
+
+                        <div class="feature-image">
+                            <a href="dp-2.html" class="thumb">
+                                <img src="img/index_05.jpg" alt="Alt text" />
+                            </a>
+                        </div>
+
+                    </article>
+
+
+                    <article class="format-standard">
+
+
+                        <!--list標題-->
+                        <div class="post-heading">
+                            <div id="dot14"></div>
+                            <a href="dp-9.html" class="con_tittle">
+                                <div class="topline">
+                                    <img alt="" src="img/bullhorn.png">
+                                    <h4>陳芳明手稿</h4>
+                                </div>
+                                <p><span>∕</span>
+
+                                    <!--                                                        &ensp;Lo Chia-Luen Collection-->
+
+                                </p>
+                            </a>
+
+                        </div>
+
+                        <!--list標題-->
+                        <div class="excerpt width black">
+                            收錄陳芳明教授近三十年的書寫手稿，共1,669篇，最早的一篇是1983年的〈深夜的嘉南平原〉。手稿的珍貴在於獨一無二，落筆的力度與角度無法重現，字跡或狂放或工整，反映著下筆剎那間的心境。
+
+
+
+                            <a href="dp-9.html"></a>
+
+                        </div>
+
+
+                        <div class="feature-image">
+                            <a href="dp-9.html" class="thumb">
+                                <img src="img/pic_21.jpg" alt="Alt text" />
+                            </a>
+                        </div>
+
+                    </article>
+
+
+                    <article class="format-standard w1">
+
+
+                        <!--list標題-->
+                        <div class="post-heading">
+                            <div id="dot8"></div>
+
+                            <a href="dp-3.html" class="con_tittle">
+                                <div class="topline rwdd">
+                                    <img alt="" src="img/bullhorn.png">
+                                    <h4>兩大機關報下的蘇聯：《消息報》與《真理報》</h4>
+                                </div>
+
+                                <div class="topline rwd414">
+                                    <img alt="" src="img/bullhorn.png">
+                                    <h4>兩大機關報下的蘇聯：《消息報》與《真理報》</h4>
+                                </div>
+                                <p><span>∕</span>
+                                    <!--                                                        &ensp;Cheng Shin-fan Collection-->
+                                </p>
+                            </a>
+
+                        </div>
+
+                        <!--list標題-->
+                        <div class="excerpt width black">
+                            本資料庫收錄1947-1991年間冷戰時期兩大機關報之剪報，以主題分類，將剪報翻譯及數位化。《真理報》為蘇聯共產黨中央委員會的機關報，是蘇聯時期最具影響力的刊物；《消息報》為蘇聯最高蘇維埃的機關報，是蘇聯時期第二大報紙。
+
+
+
+                            <a href="dp-3.html"></a>
+
+                        </div>
+
+
+                        <div class="feature-image">
+                            <a href="dp-3.html" class="thumb">
+                                <img src="img/6list_15.jpg" alt="Alt text" />
+                            </a>
+                        </div>
+
+                    </article>
+
+
+                    <article class="format-standard">
+
+
+                        <!--list標題-->
+                        <div class="post-heading">
+                            <div id="dot19"></div>
+                            <a href="dp-14.html" class="con_tittle">
+                                <div class="topline">
+                                    <img alt="" src="img/bullhorn.png">
+                                    <h4>民國38年前重要剪報資料庫</h4>
+                                </div>
+                                <p><span>∕</span>
+                                    <!--                                                        &ensp;Fang Hao Collection-->
+
+                                </p>
+                            </a>
+
+                        </div>
+
+                        <!--list標題-->
+                        <div class="excerpt width black">
+                            收錄本校圖書館特藏室典藏民國38年以前重要剪報資料之數位影像內容。資料類型以新聞資料、史料為主，收錄年代約為1930-1949年間，共計139,558則標題，165,804頁資料，是中國大陸地區對日抗戰時間的重要新聞資訊。
+
+
+                            <a href="dp-14.html"></a>
+
+                        </div>
+
+
+                        <div class="feature-image">
+                            <a href="dp-14.html" class="thumb">
+                                <img src="img/pic_23.jpg" alt="Alt text" />
+                            </a>
+                        </div>
+
+                    </article>
+
+
+
+     
+                    <article class="format-standard w1">
+
+
+                        <!--list標題-->
+                        <div class="post-heading">
+                            <div id="dot22"></div>
+                            <a href="dp-19.html" class="con_tittle">
+                                <div class="topline">
+                                    <img alt="" src="img/bullhorn.png">
+                                    <h4>高明教授史料資料庫</h4>
+                                </div>
+                                <p><span>∕</span>
+                                    <!--                                                        &ensp;Yu Tien-chong Collection-->
+
+                                </p>
+                            </a>
+
+                        </div>
+
+                        <!--list標題-->
+                        <div class="excerpt width black">
+                            字仲華，為著名學者、教育家。曾任教於包含政治大學在內多所學校之中文系，投入於中國文學教育之中，也曾兼任政大中文系及中文研究所之主任，於政大作育眾多學子。本資料庫收錄高明教授相關書信、手稿、證書文件等資料。
+
+                            <a href="dp-19.html"></a>
+
+                        </div>
+
+
+                        <div class="feature-image">
+                            <a href="dp-19.html" class="thumb">
+                                <img src="img/pic_45.jpg" alt="Alt text" />
+                            </a>
+                        </div>
+
+                    </article>
+
+
+
+                    <article class="format-standard">
+
+
+                        <!--list標題-->
+                        <div class="post-heading">
+                            <div id="dot18"></div>
+                            <a href="dp-13.html" class="con_tittle">
+                                <div class="topline">
+                                    <img alt="" src="img/bullhorn.png">
+                                    <h4>中華民國政府官職資料庫</h4>
+                                </div>
+                                <p><span>∕</span>
+                                    <!--                                                        &ensp;Lo Chia-Luen Collection-->
+                                </p>
+                            </a>
+
+                        </div>
+
+                        <!--list標題-->
+                        <div class="excerpt width black">
+                            收錄中華民國體制以來七個時期總統府公報人事任免命令，內容涵蓋我國百年來的文武官員異動紀錄，迄今已建置85萬筆以上資料以及15,708筆公報影像檔，並將持續新增資料。
+
+
+
+                            <a href="dp-13.html"></a>
+
+                        </div>
+
+
+                        <div class="feature-image">
+                            <a href="dp-13.html" class="thumb">
+                                <img src="img/index_23.jpg" alt="Alt text" />
+                            </a>
+                        </div>
+
+                    </article>
+
+
+                    
+                    <article class="format-standard w1">
+
+
+                        <!--list標題-->
+                        <div class="post-heading">
+                            <div id="dot15"></div>
+                            <a href="dp-10.html" class="con_tittle">
+                                <div class="topline">
+                                    <img alt="" src="img/bullhorn.png">
+                                    <h4>臺灣人權促進會人權檔案數位典藏計畫</h4>
+                                </div>
+                                <p><span>∕</span>
+
+                                    <!--                                                        &ensp;Fang Hao Collection-->
+
+                                </p>
+                            </a>
+
+                        </div>
+
+                        <!--list標題-->
+                        <div class="excerpt width black">
+                            臺灣人權促進會跨越戒嚴時期到臺灣成為自由國家後的發展，是臺灣目前重要的人權組織之一。本計畫資料庫期以民間的、社會的觀點，與官方檔案相對照，提供臺灣人權發展之相關研究得以在更充足、更多元的角度與視野下展開。
+
+                            <a href="dp-10.html"></a>
+
+                        </div>
+
+
+                        <div class="feature-image">
+                            <a href="dp-10.html" class="thumb">
+                                <img src="img/index_25-08.jpg" alt="Alt text" />
+                            </a>
+                        </div>
+
+                    </article>
+
+
+                    <article class="format-standard">
+
+
+                        <!--list標題-->
+                        <div class="post-heading">
+                            <div id="dot12"></div>
+                            <a href="dp-6.html" class="con_tittle">
+                                <div class="topline">
+                                    <img alt="" src="img/bullhorn.png">
+                                    <h4>中華救助總會數位資料庫</h4>
+                                </div>
+                                <p><span>∕</span>
+
+                                    <!--                                                        &ensp;Cheng Shin-fan Collection-->
+
+                                </p>
+                            </a>
+
+                        </div>
+
+                        <!--list標題-->
+                        <div class="excerpt width black">
+                            1950年4月4日，中華民國成立「中國大陸災胞救濟總會」，不僅是救濟行動，也是政治宣傳。隨局勢變化，國際間透過會談解決衝突，其功能與角色也相應調整。此次「中華救助總會」與本校合作，將其檔案數位化，提供學界研究。
+
+
+
+
+                            <a href="dp-6.html"></a>
+
+                        </div>
+
+
+                        <div class=" feature-image">
+                            <a href="dp-6.html" class="thumb">
+                                <img src="img/index_16.jpg" alt="Alt text" />
+                            </a>
+                        </div>
+
+                    </article>
+
+
+
+                    <article class="format-standard w1">
+
+
+                        <!--list標題-->
+                        <div class="post-heading">
+                            <div id="dot20"></div>
+                            <a href="dp-15.html" class="con_tittle">
+                                <div class="topline">
+                                    <img alt="" src="img/bullhorn.png">
+                                    <h4>顧正秋藝術網站</h4>
+                                </div>
+                                <p><span>∕</span>
+                                    <!--                                                        &ensp;Yu Tien-chong Collection-->
+
+                                </p>
+                            </a>
+
+                        </div>
+
+                        <!--list標題-->
+                        <div class="excerpt width black">
+                            顧正秋女士，其卓越的藝術成就被譽為一代「青衣祭酒」。本資料庫完整收錄了顧正秋藝術網站所典藏之表演史料，包括手稿、劇本、劇照、生活照、戲票、剪報、影音資料等，是臺灣藝術歷史的一個重要典藏。
+
+
+
+
+                            <a href="dp-15.html"></a>
+
+                        </div>
+
+
+                        <div class="feature-image">
+                            <a href="dp-15.html" class="thumb">
+                                <img src="img/pic_24.jpg" alt="Alt text" />
+                            </a>
+                        </div>
+
+                    </article>
+
+
+
+
+
+
+                    <!-- 文季 <article class="format-standard w1">
+
+
+                     
+                        <div class="post-heading">
+                            <div id="dot9"></div>
+                            <a href="dp-4.html" class="con_tittle">
+                                <div class="topline">
+                                    <img alt="" src="img/bullhorn.png">
+                                    <h4>文季系列刊物</h4>
+                                </div>
+                                <p><span>∕</span>
+                                   
+                                </p>
+                            </a>
+
+                        </div>
+
+                       
+                        <div class="excerpt width black">
+                            收錄尉天驄主編的《文學季刊》、《文學》雙月刊與《文季》季刊，其作者群形成「文季」文學集團，充實現代主義和現代主義的理論與創作，醞釀出鄉土文學論戰，對臺灣文學發展方向影響深遠。
+
+
+                            <a href="dp-4.html"></a>
+
+                        </div>
+
+
+                        <div class="feature-image">
+                            <a href="dp-4.html" class="thumb">
+                                <img src="img/6list_12.jpg" alt="Alt text" />
+                            </a>
+                        </div>
+
+                    </article> -->
+
+
+
+
+<!--  我樂多齋：鄭世璠文庫日治藝文期刊
+                    <article class="format-standard">
+
+
+                       
+                        <div class="post-heading">
+                            <div id="dot10"></div>
+                            <a href="dp-5.html" class="con_tittle">
+                                <div class="topline">
+                                    <img alt="" src="img/bullhorn.png">
+                                    <h4>我樂多齋：鄭世璠文庫日治藝文期刊</h4>
+                                </div>
+                                <p><span>∕</span>
+                                  
+                            </a>
+
+                        </div>
+
+                       
+                        <div class="excerpt width black">
+                            收錄鄭世璠文庫的日治時期文學美術相關雜誌，包括《臺灣美術》、《臺灣藝術》、《南方美術》、《文藝臺灣》、《臺灣文學》、《臺灣新文學》、《先發部隊》、《第一線》、《臺灣文藝》等，是研究臺灣文學與文化之重要史料。
+
+
+
+                            <a href="dp-5.html"></a>
+
+                        </div>
+
+
+                        <div class="feature-image">
+                            <a href="dp-5.html" class="thumb">
+                                <img src="img/pic_19.jpg" alt="Alt text" />
+                            </a>
+                        </div>
+
+                    </article> -->
+
+
+
+                    <!-- 《筆匯》革新號 <article class="format-standard w1">
+
+
+                  
+                        <div class="post-heading">
+                            <div id="dot11"></div>
+                            <a href="dp-7.html" class="con_tittle">
+                                <div class="topline">
+                                    <img alt="" src="img/bullhorn.png">
+                                    <h4>《筆匯》革新號</h4>
+                                </div>
+                                <p><span>∕</span>
+
+                
+
+                                </p>
+                            </a>
+
+                        </div>
+
+                        <div class="excerpt width black">
+                            1957年中國文藝協會所發行，原為半月刊，以討論當時文化問題為主，發行人為任卓宣。1959年5月4日改為月刊，以「革新號」面世，是尉天驄主編的第一本雜誌外，更是陳映真處女作的發表園地。
+
+
+                            <a href="dp-7.html"></a>
+
+                        </div>
+
+
+                        <div class="feature-image">
+                            <a href="dp-7.html" class="thumb">
+                                <img src="img/index_17.jpg" alt="Alt text" />
+                            </a>
+                        </div>
+
+                    </article> -->
+
+
+
+
+         
+
+
+
+
+
+
+
+
+
+
+
+
+
+                    <!--一頁10個,多要自己補頁數-->
+
+
+
+                    <ul class="pager" id="pager">
+
+                        <li class="active"><a href="digresource1.html">1</a></li>
+                        <li><a href="digresource2.html">2</a></li>
+
+
+                    </ul>
+                    <div class="clearfix"></div>
+
+                    <!--ENDS page-navigation -->
+
+
+                </div>
+
+                <!-- ENDS sidebar -->
+
+                <!-- Fold image -->
+                <div id="fold"></div>
+            </div>
+
+        </div>
+        <!-- ENDS MAIN -->
+
+
+        <footer>
+            <div class="wrapper clearfix">
+
+                <div class="footer-bottom">
+
+                    <div class="info">
+                        <div class="fl">
+                            <span>國立政治大學圖書館版權所有</span>&emsp;<span>© 2021 NCCU All Rights Reserved</span>
+                            <br>
+                            <span>特藏管理組</span>&emsp;<span>TEL:(02) 8237-7020</span>&emsp;<span><a href="mailto:ccldp@nccu.edu.tw">Mail:ccldp@nccu.edu.tw</a></span>
+                        </div>
+                    </div>
+                </div>
+                <!-- ENDS bottom -->
+            </div>
+        </footer>
+
+
+    </div>
+
+
+
+    <!-- wow.js   -->
+    <script src="js/wow.min.js"></script>
+    <script>
+        wow = new WOW({
+            animateClass: 'animated',
+            offset: 100,
+            mobile: true, // default
+            live: true, // default
+
+        });
+        wow.init();
+
+    </script>
+
+
+    <button type="button" id="BackTop" class="toTop-arrow"></button>
+    <!-- js照片效果  -->
+    <script src="js/article.js"></script>
+
+    <!--   top  -->
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+    <script>
+        $(function() {
+            $('#BackTop').click(function() {
+                $('html,body').animate({
+                    scrollTop: 0
+                }, 333);
+            });
+            $(window).scroll(function() {
+                if ($(this).scrollTop() > 414) {
+                    $('#BackTop').fadeIn(222);
+                } else {
+                    $('#BackTop').stop().fadeOut(222);
+                }
+            }).scroll();
+        });
+
+    </script>
+    <!--   top over -->
+
+</body>
+
+</html>

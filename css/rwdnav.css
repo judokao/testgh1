@@ -1,0 +1,329 @@
+/* Released: 27th March 2014 - Beverley Hooton @ Focus on Function Web Design - http://fofwebdesign.co.uk */
+/* Updated: 15th July 2014 - css to correct 'position:fixed' bug in Safari */
+/* Updated: 19th March 2015 - css sub-menu activation simplified [id$="-sub"] - thanks SeanW */
+/* Updated: 26th June 2015 - &#9668; arrows changed to &#9658; and rotated, for Android */
+/* Updated: 17th August 2015 - background added to '#menu li a' to fix intermittent text overlap */
+
+div#header {
+    display: none;
+}
+
+
+input#main-nav-check {
+    display: none;
+}
+
+
+
+
+.rwdmenu {
+    display: none;
+}
+
+
+
+@media only screen and (max-width:1024px) {
+
+    input#main-nav-check {
+        display: block;
+    }
+
+
+
+    .rwdmenu {
+        display: block;
+    }
+
+
+    body {
+        overflow-x: hidden;
+        -webkit-animation: androidbugfix infinite 1s;
+    }
+
+    /* http://timpietrusky.com/advanced-checkbox-hack */
+    @-webkit-keyframes androidbugfix {
+        from {
+            padding: 0;
+        }
+
+        to {
+            padding: 0;
+        }
+    }
+
+    div#header {
+        display: block;
+    }
+
+
+    #header label {
+        padding: 0 0.3em;
+        font: 3em/1.4375em Arial;
+
+    }
+
+    #menu label {
+        padding: 0 2rem;
+        font: 3.125em/1.375em Arial;
+    }
+
+    #menu .sub-nav .toggle {
+        padding: 0 0.3125em;
+        font: 2em/2em Arial;
+        top: 0;
+        -webkit-transform: scale(-1, 1);
+        -ms-transform: scale(-1, 1);
+        transform: scale(-1, 1);
+    }
+
+    #header label:hover,
+    #menu label:hover {
+        color: #ccc;
+    }
+
+    #main-nav-check,
+    #menu .sub-nav-check {
+        position: absolute;
+        top: -9999px;
+        left: -9999px
+    }
+
+    .toggle {
+        position: absolute;
+        right: 0.5rem;
+        cursor: pointer;
+        color: #7b7b7b;
+        top: 0rem;
+    }
+
+    .container {
+
+        min-height: 100%;
+        padding: 0;
+        margin: 0
+    }
+
+    #menu,
+    #menu .sub-nav {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        width: 13.75em;
+        background: #efece8;
+        z-index: 9999;
+        left: -13.75em;
+        height: 39.3em;
+    }
+
+    .container,
+    #menu,
+    #menu .sub-nav {
+        -webkit-transform: translate(0, 0);
+        -ms-transform: translate(0, 0);
+        transform: translate(0, 0);
+        -webkit-transition: -webkit-transform .25s ease;
+        transition: transform .25s ease;
+    }
+
+    #menu ul {
+        background: #222;
+        line-height: 2.75em;
+        text-decoration: none;
+        padding: 0;
+        list-style: none;
+        margin-top: 4.0625em;
+        border-top: 1px solid #d5d5d5;
+    }
+
+    #menu li {
+        border-bottom: 1px solid #d5d5d5;
+    }
+
+    #menu li a {
+        background: #efece8;
+        display: block;
+        font-size: 0.875em;
+        padding-left: 1.5em;
+        color: #7b7b7b;
+        text-decoration: none;
+    }
+
+    #menu li a:hover,
+    #menu .toggle-sub:hover {
+        background: #333;
+    }
+
+    #menu .sub-nav {
+        margin-top: -1px
+    }
+
+    #menu .sub-heading {
+        margin-top: 4.0625em;
+        padding-left: 1.3125em;
+        color: #999;
+    }
+
+    #menu .sub-heading:before {
+        content: "";
+        display: block;
+        height: 1px;
+        width: 13.75em;
+        margin-left: -1.3125em;
+        background: #444;
+    }
+
+    #menu .toggle-sub {
+        font: bold 1em/2.75em Arial;
+        color: #7b7b7b;
+        background: #efece8;
+        float: right;
+        margin-top: -2.8em;
+        width: 2.25em;
+        border-top: 1px solid #d5d5d5;
+        cursor: pointer;
+        text-align: center;
+        border-bottom: 1px solid #d5d5d5;
+    }
+
+    .container,
+    #menu,
+    #menu .sub-nav {
+
+        -webkit-transform: translate3d(0, 0, 0);
+    }
+
+    #main-nav-check:checked ~ .container,
+    #main-nav-check:checked ~ #menu,
+    #menu .sub-nav-check:checked ~ [id$="-sub"] {
+        -webkit-transform: translate(13.75em, 0);
+        -ms-transform: translate(13.75em, 0);
+        transform: translate(13.75em, 0);
+    }
+
+
+    .page-content {
+        padding: 0 1em 1em;
+        max-width: 64em;
+        margin: auto;
+    }
+
+    .page-content:after {
+        display: block;
+        content: "";
+        height: 1px;
+    }
+
+    /* fixes bottom padding issue in IE10 */
+    .breadcrumbs {
+        font-size: .75em;
+        border-bottom: 7px solid #eee;
+        margin: 0 -1.25em 1.5em;
+        padding: 1em 1.25em;
+    }
+
+    .breadcrumbs span {
+        display: none;
+    }
+
+
+
+
+    a,
+    a:active,
+    a:visited {}
+
+    a:visited {}
+
+    a:hover,
+    a:focus {
+        color: #666;
+        text-decoration: none
+    }
+
+    code {
+        display: block;
+        background: #ebebeb;
+        font-size: 0.875em;
+        padding: 1em 2em;
+        overflow-x: scroll;
+        white-space: nowrap;
+    }
+
+
+
+    #header {
+
+        position: relative;
+        top: 0;
+        left: 0;
+        right: 0;
+        height: 4.0625em;
+        background: #304455;
+        -webkit-box-shadow: 0px 6px 10px -6px rgba(0, 0, 0, 1);
+        -moz-box-shadow: 0px 6px 10px -6px rgba(0, 0, 0, 1);
+        box-shadow: 1px 6px 18px -6px rgb(27, 27, 27);
+
+    }
+
+
+
+
+
+
+
+
+    .wt {
+        color: #fff;
+    }
+
+
+
+
+
+
+
+
+}
+
+
+
+@media only screen and (max-width:768px) {
+
+    header .wrapper {
+        padding: 0px 5px 57px;
+    }
+
+
+
+    #menu,
+    #menu .sub-nav {
+        height: 42.5em;
+    }
+
+
+
+
+
+
+}
+
+@media only screen and (max-width:414px) {
+
+    width: 414px;
+
+}
+
+
+
+@media(min-width:30em) {
+    .breadcrumbs {
+        line-height: 3.75;
+        padding: 0 1.25em;
+    }
+}
+
+@media(min-width:60em) {
+    .breadcrumbs span {
+        display: inline-block;
+    }
+}

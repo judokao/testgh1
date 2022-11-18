@@ -1,0 +1,740 @@
+<!doctype html>
+<html class="no-js">
+
+<head>
+    <meta charset="utf-8" />
+    <title>文庫典藏</title>
+
+    <!--[if lt IE 9]>
+			<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+		<![endif]-->
+    <link rel="stylesheet" media="all" href="css/style.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- Adding "maximum-scale=1" fixes the Mobile Safari auto-zoom bug: http://filamentgroup.com/examples/iosScaleBug/ -->
+
+
+    <!--RWDMEUN-->
+    <link rel="stylesheet" href="css/rwdnav.css">
+
+    <!-- JS -->
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/jquery-migrate-1.2.1.js"></script>
+    <script src="js/css3-mediaqueries.js"></script>
+    <script src="js/custom.js"></script>
+    <script src="js/tabs.js"></script>
+
+    <!-- Tweet -->
+
+    <link rel="stylesheet" href="css/jquery.tweet.css" media="all" />
+    <script src="js/tweet/jquery.tweet.js"></script>
+
+    <!-- ENDS Tweet -->
+
+    <!-- superfish -->
+    <link rel="stylesheet" media="screen" href="css/superfish.css" />
+    <script src="js/superfish-1.4.8/js/hoverIntent.js"></script>
+    <script src="js/superfish-1.4.8/js/superfish.js"></script>
+    <script src="js/superfish-1.4.8/js/supersubs.js"></script>
+    <!-- ENDS superfish -->
+
+    <!-- prettyPhoto幻燈片放大不換頁 -->
+
+    <script src="js/prettyPhoto/js/jquery.prettyPhoto.js"></script>
+    <link rel="stylesheet" href="js/prettyPhoto/css/prettyPhoto.css" media="screen" />
+
+    <!-- ENDS prettyPhoto -->
+
+    <!-- poshytip -->
+    <link rel="stylesheet" href="js/poshytip-1.1/src/tip-twitter/tip-twitter.css" />
+    <link rel="stylesheet" href="js/poshytip-1.1/src/tip-yellowsimple/tip-yellowsimple.css" />
+    <script src="js/poshytip-1.1/src/jquery.poshytip.min.js"></script>
+    <!-- ENDS poshytip -->
+
+    <!-- GOOGLE FONTS -->
+    <link href='http://fonts.googleapis.com/css?family=Arvo:400,700' rel='stylesheet' type='text/css'>
+    <link href="https://fonts.googleapis.com/css?family=Noto+Sans+TC:300,400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Noto+Serif+TC:400,500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Noto+Sans+TC|Noto+Serif+TC:400,500&display=swap"
+        rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css?family=Noto+Sans+TC|Noto+Serif+TC:400,500|Playfair+Display&display=swap"
+        rel="stylesheet">
+
+    <!-- Flex Slider -->
+    <link rel="stylesheet" href="css/flexslider.css">
+    <script src="js/jquery.flexslider-min.js"></script>
+    <!-- ENDS Flex Slider -->
+
+    <!-- Masonry -->
+    <script src="js/masonry.min.js"></script>
+    <script src="js/imagesloaded.js"></script>
+    <!-- ENDS Masonry -->
+
+    <!-- Less framework -->
+    <link rel="stylesheet" media="all" href="css/lessframework.css" />
+
+    <!-- modernizr -->
+    <script src="js/modernizr.js"></script>
+
+    <!-- SKIN -->
+    <link rel="stylesheet" media="all" href="css/skin.css" />
+
+    <!-- search	js-->
+    <script type="text/javascript" src="js/sudoh.js"></script>
+
+
+    <!-- wow.css -->
+    <link rel="stylesheet" href="css/animate.css">
+
+
+
+    <!--政大Primo VE快速查詢框   -->
+
+    <script type="text/javascript">
+        function searchPrimo() {
+
+            document.getElementById("primoQuery").value = "any,contains," + document.getElementById("primoQueryTemp").value.replace(/[,]/g, " ");
+
+            document.forms["searchForm"].submit();
+
+        }
+
+    </script>
+
+
+
+
+</head>
+
+<body lang="en" class="inside">
+
+
+
+    <!-- comboNav -->
+
+    <input type="checkbox" id="main-nav-check" />
+    <div id="menu">
+
+
+        <div class="rwdmenu">
+            <label for="main-nav-check" class="toggle" onclick="" title="Close">&times;</label>
+            <ul>
+
+
+                <li><a href="aboutus.html">特藏中心</a> <label for="fof" class="toggle-sub" onclick="">&#9658;</label>
+                    <input type="checkbox" id="fof" class="sub-nav-check" />
+                    <ul id="fof-sub" class="sub-nav">
+                        <li class="sub-heading">特藏中心<label for="fof" class="toggle" onclick=""
+                                title="Back">&#9658;</label></li>
+                        <li><a href="aboutus.html">關於我們</a></li>
+                        <li><a href="service.html">開放時間</a></li>
+                        <li><a href="introspace.html">空間介紹</a></li>
+                        <li><a href="rule.html">規章要點</a></li>
+                        <li><a href="qa.html">常見問題</a></li>
+                    </ul>
+                </li>
+
+
+
+                <li><a href="specialresource_1.html">特色館藏</a> <label for="fast-apps" class="toggle-sub"
+                        onclick="">&#9658;</label>
+                    <input type="checkbox" id="fast-apps" class="sub-nav-check" />
+                    <ul id="fast-apps-sub" class="sub-nav">
+                        <li class="sub-heading">特色館藏<label for="fast-apps" class="toggle" onclick=""
+                                title="Back">&#9658;</label></li>
+                        <li><a href="specialresource_1.html">文庫典藏</a></li>
+                        <li><a href="digresource1.html">專案史料</a></li>
+                        <li><a href="bookcollection.html">特藏圖書</a></li>
+                        <li><a href="search.html">資源查詢</a></li>
+                    </ul>
+                </li>
+
+
+                <li><a href="exhibition.html">學術推廣</a> <label for="fast-apps2" class="toggle-sub"
+                        onclick="">&#9658;</label>
+                    <input type="checkbox" id="fast-apps2" class="sub-nav-check" />
+                    <ul id="fast-apps2-sub" class="sub-nav">
+                        <li class="sub-heading">特藏中心<label for="fof" class="toggle" onclick=""
+                                title="Back">&#9658;</label></li>
+                        <li><a href="exhibition.html">活動展覽</a></li>
+                        <li><a href="lecture.html">講座論壇</a></li>
+                        <li><a href="publishing.html">學術出版</a></li>
+                        <li><a href="product.html">文創商品</a></li>
+                    </ul>
+                </li>
+
+
+
+
+                <li><a href="https://www.lib.nccu.edu.tw/" target="_blank">本館首頁</a></li>
+
+
+
+
+            </ul>
+        </div>
+
+    </div>
+
+    <!-- closing "#menu" -->
+
+    <div class="container">
+
+
+        <div class="wow fadeInDown" data-wow-duration="1s">
+            <div id="header">
+
+
+                <label for="main-nav-check" class="toggle wt" onclick="" title="Menu">&#x2261;</label>
+            </div>
+
+            <header>
+                <div class="wrapper clearfix">
+
+                    <div id="logo" class="logo">
+                        <a href="index.html">政大<span class="w">/</span><a href="index.html"
+                                class="dig">特藏中心</a>&emsp;<span class="y">Special Collection Center</span></a>
+                    </div>
+                    <!-- nav-2 -->
+
+
+                    <ul id="nav" class="sf-menu" style="position:relative;z-index:99;">
+
+                        <li class="current-menu-item"><a href="aboutus.html">特藏中心</a>
+                            <ul>
+                                <li><a href="aboutus.html">關於我們</a></li>
+                                <li><a href="service.html">開放時間</a></li>
+                                <li><a href="introspace.html">空間介紹</a></li>
+                                <li><a href="rule.html">規章要點</a></li>
+                                <li><a href="qa.html">常見問題</a></li>
+                            </ul>
+                        </li>
+
+                        <li class="current-menu-item"><a href="specialresource_1.html">特色館藏</a>
+                            <ul>
+                                <li><a href="specialresource_1.html">文庫典藏</a></li>
+                                <li><a href="digresource1.html">專案史料</a></li>
+                                <li><a href="bookcollection.html">特藏圖書</a></li>
+                                <li><a href="search.html">資源查詢</a></li>
+                            </ul>
+                        </li>
+
+
+                        <li class="current-menu-item"><a href="exhibition.html">學術推廣</a>
+                            <ul>
+                                <li><a href="exhibition.html">活動展覽</a></li>
+                                <li><a href="lecture.html">講座論壇</a></li>
+                                <li><a href="publishing.html">學術出版</a></li>
+                                <li><a href="product.html">文創商品</a></li>
+                            </ul>
+                        </li>
+
+
+                        <li class="current-menu-item"><a href="https://www.lib.nccu.edu.tw/" target="_blank">本館首頁</a>
+                        </li>
+
+                    </ul>
+
+
+
+
+                </div>
+            </header>
+
+        </div>
+        <!-- MAIN -->
+        <div id="main">
+            <div class="wrapper clearfix">
+
+                <!-- masthead -->
+
+                <div class="masthead clearfix new1">
+                    <h1 class="tittle"><img alt="" width="210" src="img/digitallist_03.png"></h1>
+
+                    <p class="subheading"><span class="tittle2">SPECIAL COLLECTIONS</span>
+                        <br>
+                        特藏中心典藏以漢學研究資源、臺灣與中國近現代政治及社會發展、東亞藝術文化發展與傳播為特色主軸，館藏類型涵蓋善本古籍、普通本線裝書、珍稀本書刊、名家手跡、書信等私人文書及文物。
+                    </p>
+
+
+                    <!--   搜尋區塊*2   -->
+                    <div class="out1">
+                        <ul class="tabs">
+                            <li><a href="#"><span>特藏圖書</span></a></li>
+                            <li><span>｜</span></li>
+                            <li><a href="#"><span>特藏史料</span></a></li>
+                        </ul>
+
+                        <div class="panes">
+
+                            <!--    search 特藏圖書 alma    -->
+
+                            <div class="search">
+                                <div class="relative">
+                                    <form id="simple" name="searchForm" method="get" target="_blank"
+                                        action="https://nccu.primo.exlibrisgroup.com/discovery/search"
+                                        enctype="application/x-www-form-urlencoded; charset=utf-8"
+                                        xonsubmit="searchPrimo()">
+
+                                        <!-- Customizable Parameters -->
+
+                <!-- 編碼會自動隱藏 貼在此才不會亂碼 -->
+
+                                         <input type="hidden" name="mfacet"
+                                            value="location_code,include,5721–112037580005721–dhlzp1,1">
+
+                                        <input type="hidden" name="mfacet"
+                                            value="location_code,include,5721–112037580005721–dhlzp3,1">
+
+
+                                        <input type="hidden" name="mfacet"
+                                            value="location_code,include,5721–112037580005721–dhlzc,1">
+
+                                            
+                                        <input type="hidden" name="mfacet"
+                                            value="location_code,include,5721–112037580005721–dhlte,1">
+
+
+
+                                        <input type="hidden" id="primoQuery" name="query" value="">
+                                        <input type="hidden" name="tab" value="LibraryCatalog">
+                                        <input type="hidden" name="tab" value="LibraryCatalog">
+                                        <input type="hidden" name="search_scope" value="MyInstitution">
+                                        <input type="hidden" name="vid" value="886NCCU_INST:886NCCU_INST">
+                                        <input type="hidden" name="hide" value="1">
+                                        <input type="text" id="primoQueryTemp" class="content_text1" placeholder="請輸入">
+
+
+                                        <!-- Search Button -->
+
+                                        <input id="go" title="Search" onclick="searchPrimo()" type="button"
+                                            value="Search" alt="Search" class="submit_button zoom">
+
+                                    </form>
+
+
+                                </div>
+                            </div>
+                            <!-- search over -->
+
+
+                            <!--    search 特藏中心     -->
+                            <div>
+                                <div id="1_summit" class="search">
+
+                                    <div class="1_summit_right relative">
+                                        <input class="content_text2" type="text" style="user-select: auto;"
+                                            placeholder="請輸入">
+                                        <input class="submit_button zoom" type="submit" name="submit"
+                                            onclick="submitSearchContentdm()">
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- search over -->
+
+
+
+
+
+
+                        </div>
+
+
+
+
+
+
+                    </div>
+
+                    <!--   搜尋區塊*2   -->
+
+                </div>
+
+
+
+
+
+                <div class='mh-div'></div>
+
+
+                <!-- ENDS masthead -->
+
+
+
+                <!-- posts list -->
+                <div id="posts-list" class="clearfix">
+
+                    <article class="format-standard">
+
+
+                        <!--list標題-->
+                        <div class="post-heading">
+                            <a href="sp-1.html" class="con_tittle">
+                                <div class="topline">
+                                    <img alt="" src="img/bullhorn.png">
+                                    <h4>羅家倫文庫&ensp;&ensp;</h4>
+                                </div>
+                                <p><span>∕</span>&ensp;Lo Chia-Luen Collection</p>
+                            </a>
+
+                        </div>
+
+                        <!--list標題-->
+                        <div class="excerpt width black">
+                            羅家倫先生(1897-1969)，字志希，為「五四運動」之學生領袖，曾任清華、中央大學校長，並曾任中央政治學校（本校前身）代教育長。其藏書、著作及史料文件主題涵蓋教育、外交、歷史、哲學、文學、藝術等領域，其中不乏罕見古籍刊本，相當珍貴。
+                            <br>
+                            <br>
+
+                            <a href="https://contentdm.lib.nccu.edu.tw/digital/collection/lclrb">珍古傳今：善本書數位影像</a>&ensp;/&ensp;
+                            <a href="dp-1.html">羅家倫文稿</a>&ensp;/&ensp;
+                            <a href="https://nccu.primo.exlibrisgroup.com/discovery/collectionDiscovery?vid=886NCCU_INST:886NCCU_INST&collectionId=81219518570005721
+                            ">文庫圖書</a>
+
+                            <br>
+                            <a href="sp-1.html"></a>
+
+                        </div>
+
+
+                        <div class="feature-image">
+                            <a href="sp-1.html" class="thumb">
+                                <img src="img/pic_03.jpg" alt="Alt text" />
+                            </a>
+                        </div>
+                        <br>
+                        <br>
+                    
+                       
+                    </article>
+
+                    <article class="format-standard w1">
+
+
+                        <!--list標題-->
+                        <div class="post-heading">
+                            <div id="dot1"></div>
+                            <a href="sp-2.html" class="con_tittle">
+                                <div class="topline">
+
+                                    <img alt="" src="img/bullhorn.png">
+                                    <h4>方豪孝思堂文庫</h4>
+
+
+                                </div>
+                                <p><span>∕</span>&ensp;Fang Hao Collection</p>
+                            </a>
+
+                        </div>
+
+                        <!--list標題-->
+                        <div class="excerpt width black">
+                            方豪先生(1910-1980)，字杰人，身兼天主教神職及歷史學者，於中西交通史、宋史、宗教史與臺灣史研究之收藏豐富，類型包含圖書、手稿、書信、印版等，其中不乏臺灣史研究珍貴手抄本、稿本與孤本。
+                            <br>
+                            <br>
+
+                            <a href="dp-12.html">民俗臺灣</a>&ensp;/&ensp;
+
+                            <a
+                                href="https://contentdm.lib.nccu.edu.tw/digital/collection/p20070coll4">方豪先生史料資料庫</a>&ensp;/&ensp;
+
+                            <a href="https://nccu.primo.exlibrisgroup.com/discovery/collectionDiscovery?vid=886NCCU_INST:886NCCU_INST&collectionId=81219518420005721
+                            ">方豪先生史料文庫圖書</a>&ensp;&ensp;
+
+
+                            <a href="sp-2.html"></a>
+
+                        </div>
+
+
+
+
+
+
+                        <div class="feature-image">
+                            <a href="sp-2.html" class="thumb">
+                                <img src="img/6list_07.jpg" alt="Alt text" />
+                            </a>
+                        </div>
+                        <br>
+                        <br>
+                    </article>
+
+
+                    <article class="format-standard ">
+
+
+                        <!--list標題-->
+                        <div class="post-heading">
+                            <div id="dot3"></div>
+                            <a href="sp-4.html" class="con_tittle">
+                                <div class="topline">
+                                    <img alt="" src="img/bullhorn.png">
+                                    <h4>尉天驄文庫&emsp;&emsp;</h4>
+                                </div>
+                                <p><span>∕</span>&ensp;Yu Tien-chong Collection</p>
+                            </a>
+
+                        </div>
+
+                        <!--list標題-->
+                        <div class="excerpt width black">
+                            尉天驄教授曾任《筆匯》月刊、《文學季刊》、《文季》季刊、《中國論壇》主編，其所收藏的史料豐富，從中可探究戰後臺灣文學發展之脈絡，另有承繼自任卓宣先生之珍貴民國史料。
+
+                            <br>
+                            <br>
+                            <a href="dp-7.html">《筆匯》革新號</a>&ensp;/&ensp;
+                            <a href="dp-4.html">文季系列刊物</a>&ensp;/&ensp;
+                            <a href="https://nccu.primo.exlibrisgroup.com/discovery/collectionDiscovery?vid=886NCCU_INST:886NCCU_INST&collectionId=81219518590005721">文庫圖書</a>&ensp;&ensp;
+                            <a href="sp-4.html"></a>
+
+
+
+                        </div>
+
+
+                        <div class="feature-image">
+                            <a href="sp-4.html" class="thumb">
+                                <img src="img/6list_12.jpg" alt="Alt text" />
+                            </a>
+                        </div>
+                        <br>
+                        <br>
+                    </article>
+
+
+
+                    <article class="format-standard w1">
+
+
+                        <!--list標題-->
+                        <div class="post-heading">
+                            <div id="dot2"></div>
+
+                            <a href="sp-5.html" class="con_tittle">
+                                <div class="topline">
+                                    <img alt="" src="img/bullhorn.png">
+                                    <h4>鄭世璠文庫&emsp;&emsp;</h4>
+                                </div>
+                                <p><span>∕</span>&ensp;Cheng Shin-fan Collection</p>
+                            </a>
+
+                        </div>
+
+                        <!--list標題-->
+                        <div class="excerpt width black">
+                            鄭世璠先生(1915-2006)，新竹市人，被稱為「臺灣美術界的活字典」，畫室別號「我樂多齋」。藏品包括圖書、手稿、書信、歌本、文物等，總計約1萬3,000件，收藏許多日治時期文學美術相關的雜誌，是研究臺灣文學與文化之重要史料。
+
+
+                            <br>
+                            <br>
+
+                            <!-- <a href="https://da.lib.nccu.edu.tw/sfc2021/">文庫特展</a>&ensp;/&ensp; -->
+
+                            <a href="dp-5.html">我樂多齋：鄭世璠文庫日治藝文期刊</a>&ensp;/&ensp;
+
+                            <a href="dp-18.html">鄭世璠繪畫集</a>&ensp;/&ensp;
+
+                            <a href="https://nccu.primo.exlibrisgroup.com/discovery/collectionDiscovery?vid=886NCCU_INST:886NCCU_INST&collectionId=81219518580005721
+                            ">文庫圖書</a>&ensp;&ensp;
+
+                            <a href="sp-5.html"></a>
+                            
+
+                        </div>
+
+
+                        <div class="feature-image">
+                            <a href="sp-5.html" class="thumb">
+                                <img src="img/6list_10.jpg" alt="Alt text" />
+                            </a>
+                        </div>
+                        <br>
+                        <br>
+                    </article>
+
+
+
+
+           
+
+                    <article class="format-standard">
+
+
+                        <!--list標題-->
+                        <div class="post-heading">
+                            <div id="dot4"></div>
+                            <a href="sp-3.html" class="con_tittle">
+
+                                <div class="topline">
+                                    <img alt="" src="img/bullhorn.png">
+                                    <h4 class="rwdd">臺灣政治與社會發展海外史料
+                                        <!-- <span class="rwd414">&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;</span> -->
+                                    </h4>
+
+                                </div>
+                                <p><span>∕</span>&ensp;Taiwan Political and Social Movements Overseas Historical
+                                    Materials</p>
+                            </a>
+
+                        </div>
+
+                        <!--list標題-->
+                        <div class="excerpt width black">
+                            以1950-1990年代臺灣人民於海外所發行的政論性刊物為標的，忠實保存與呈現在臺灣民主進程中不同意識型態的理念與見解，為不同立論與史觀者提供多元詮釋及相互辯證的歷史素材。
+                            <br>
+                            <br>
+                            <a href="https://da.lib.nccu.edu.tw/tdm_2020/">海外史料資料庫</a>&ensp;/&ensp;
+
+                            <a href="https://tdmebook.lib.nccu.edu.tw/">海外史料電子書</a>&ensp;/&ensp;
+
+                            <a
+                                href="https://contentdm.lib.nccu.edu.tw/digital/collection/tdm">海外史料文物登錄系統</a>&ensp;&ensp;
+
+                            <a href="sp-3.html"></a>
+
+                        </div>
+
+
+                        <div class="feature-image">
+                            <a href="sp-3.html" class="thumb">
+                                <img src="img/6list_13.jpg" alt="Alt text" />
+                            </a>
+                        </div>
+                        <br>
+                        <br>
+                    </article>
+
+                    <article class="format-standard w1">
+
+
+                        <!--list標題-->
+                        <div class="post-heading">
+                            <div id="dot5"></div>
+                            <a href="sp-6.html" class="con_tittle">
+                                <div class="topline">
+                                    <img alt="" src="img/bullhorn.png">
+                                    <h4>明清古籍</h4>
+                                </div>
+                                <p><span>∕</span>&ensp;Rare Books</p>
+                            </a>
+
+                        </div>
+
+                        <!--list標題-->
+                        <div class="excerpt width black">
+                            在臺復校以來，陸續典藏來自陸軍財經學校、行政司法部、教育部圖書室及名人捐贈之明清古籍，包含明本13部208冊、清本515部7,148冊。
+
+                            <a href="sp-6.html"></a>
+
+                        </div>
+
+
+                        <div class="feature-image">
+                            <a href="sp-6.html" class="thumb">
+                                <img src="img/6list_14.jpg" alt="Alt text" />
+                            </a>
+                        </div>
+                        <br>
+                        <br>
+                    </article>
+
+
+
+
+                    <!--一頁4個,多要自己補頁數-->
+
+
+
+                    <ul class="pager" id="one">
+
+                        <li class="active"><a href="specialresource_1.html">1</a></li>
+
+
+
+                    </ul>
+                    <div class="clearfix"></div>
+
+                    <!--ENDS page-navigation -->
+
+
+                </div>
+
+                <!-- ENDS sidebar -->
+
+                <!-- Fold image -->
+                <div id="fold"></div>
+            </div>
+
+        </div>
+        <!-- ENDS MAIN -->
+
+
+        <footer>
+            <div class="wrapper clearfix">
+
+                <div class="footer-bottom">
+
+                    <div class="info">
+                        <div class="fl">
+                            <span>國立政治大學圖書館版權所有</span>&emsp;<span>© 2021 NCCU All Rights Reserved</span>
+                            <br>
+                            <span>特藏管理組</span>&emsp;<span>TEL:(02) 8237-7020</span>&emsp;<span><a
+                                    href="mailto:ccldp@nccu.edu.tw">Mail:ccldp@nccu.edu.tw</a></span>
+                        </div>
+                    </div>
+                </div>
+                <!-- ENDS bottom -->
+            </div>
+        </footer>
+
+
+        <!-- js照片效果  -->
+
+    </div>
+    <button type="button" id="BackTop" class="toTop-arrow"></button>
+
+    <!-- 圖 -->
+    <script src="js/article.js"></script>
+
+
+    <!-- wow.js   -->
+    <script src="js/wow.min.js"></script>
+    <script>
+        wow = new WOW({
+            animateClass: 'animated',
+            offset: 100,
+            mobile: true, // default
+            live: true, // default
+
+        });
+        wow.init();
+
+    </script>
+
+
+    <!--   top  -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+    <script>
+        $(function () {
+            $('#BackTop').click(function () {
+                $('html,body').animate({
+                    scrollTop: 0
+                }, 333);
+            });
+            $(window).scroll(function () {
+                if ($(this).scrollTop() > 414) {
+                    $('#BackTop').fadeIn(222);
+                } else {
+                    $('#BackTop').stop().fadeOut(222);
+                }
+            }).scroll();
+        });
+
+    </script>
+    <!--   top over -->
+
+
+</body>
+
+</html>
